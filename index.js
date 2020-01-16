@@ -6,7 +6,7 @@ import './style.css';
 const MyComponent = (props) => {
   return <>
       <ul>
-        {props.list.map(item => <li>{item}</li>)}
+        {props.list.map(item => <li key={item}>{item}</li>)}
       </ul>
       </>
 }
